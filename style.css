@@ -34,7 +34,7 @@ nav, .navLinks{
 nav{
     justify-content: space-around;
     align-items: center;
-    height: 17vh;
+    height: 10vh;
 }
 
 .navLinks{
@@ -70,23 +70,54 @@ a:hover{
 section{
     padding-top: 4vh;
     height: 96vh;
-    margin: 0 10rem;
+    margin: 0;
 }
 
 .sectionContainer{
     display: flex;
+    height: 20px;
 }
 
 /* Index.html State Intro Section */
 
-#stateIntro{
+#locationIntro {
+    position: relative;
+    height: 96vh;
     display: flex;
     justify-content: center;
-    gap: 5rem;
-    height: 80vh;
+    align-items: center;
+    overflow: hidden;
 }
 
-#stateIntroImg{
-    width: 50%;
+.stateIntroContainer {
+    position: relative;
+    width: 100%;
     height: 100%;
+}
+
+.locationImg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.locationName {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+.locationName h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.locationName p {
+    font-size: 1.2rem;
+    color: white;
 }
