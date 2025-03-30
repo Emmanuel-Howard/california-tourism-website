@@ -7,7 +7,7 @@
 }
 
 body{
-    font-family: 'Poppins', sans-serif;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: white;
 }
 
@@ -35,6 +35,7 @@ nav{
     justify-content: space-around;
     align-items: center;
     height: 10vh;
+    padding-top: 2rem;
 }
 
 .navLinks{
@@ -68,8 +69,8 @@ a:hover{
 /* Sections */
 
 section{
-    padding-top: 4vh;
-    height: 96vh;
+    padding-top: 0vh;
+    height: 80vh;
     margin: 0;
 }
 
@@ -78,21 +79,16 @@ section{
     height: 20px;
 }
 
-/* Index.html State Intro Section */
+/* Location Intro Section */
 
 #locationIntro {
     position: relative;
-    height: 96vh;
+    padding-top: 4vh;
+    height: 90vh;
     display: flex;
     justify-content: center;
     align-items: center;
     overflow: hidden;
-}
-
-.stateIntroContainer {
-    position: relative;
-    width: 100%;
-    height: 100%;
 }
 
 .locationImg {
@@ -120,4 +116,308 @@ section{
 .locationName p {
     font-size: 1.2rem;
     color: white;
+}
+
+.sfSights {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
+.sfSights ol {
+    list-style-position: inside;
+    padding-left: 0;
+    margin-left: 0;
+    list-style-type: decimal !important;
+    text-align: left;
+}
+
+.sfSights li {
+    margin-bottom: 10px;
+}
+
+#sfSightH2{
+    margin-bottom: 0;
+}
+
+/* Location Info Section */
+
+#locationInfo{
+    position: relative;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5rem;  /* Adjust the padding to make space for content */
+}
+
+.locationInfoContainer{
+    flex: 1;
+    text-align: center;
+    margin: 0 5rem;
+}
+
+.locationImgContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 35rem;
+    width: 40rem;
+    margin-right: 5rem;
+}
+
+.locationImgContainer img{
+    max-width: 100%;
+    height: auto;
+    border-radius: 1rem;
+}
+
+.locationImgContainer img:hover{
+    transform: scale(1.03);
+    transition: all 300ms ease;
+}
+
+.locationInfoContainer h2{
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+/* Location Overview Section */
+
+#locationOverview{
+    position: relative;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.leftLocationImgContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 35rem;
+    width: 40rem;
+    margin-left: 5rem;
+}
+
+.leftLocationImgContainer img{
+    max-width: 100%;
+    height: auto;
+    border-radius: 1rem;
+}
+
+.leftLocationImgContainer img:hover{
+    transform: scale(1.03);
+    transition: all 300ms ease;
+}
+
+.locationFlag, .locationLandscape {
+    width: 100%;
+    height: 35rem;
+    object-fit: cover;
+    border-radius: 1rem;
+}
+
+/* Footer Section */
+
+footer{
+    justify-content: center;
+    align-items: center;
+    height: 24vh;
+}
+
+footer p{
+    text-align: center;
+    margin-top: 3rem;
+    color: gray;
+}
+
+/* Contact Form */
+
+#contactH2{
+    padding-top: 10px;
+    text-align: center;
+    font-size: 60px;
+    padding-bottom: 5px;
+}
+
+#contactP{
+    padding-top: 10px;
+    text-align: center;
+}
+
+#contactP2{
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+input, select {
+    width: 70%;
+    margin-left: 12%;
+    font-size: 20px;
+    padding: 16px 16px;
+    border-radius: 10px;
+    border-color: black;
+    margin-bottom: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+textarea{
+    background-color: white;
+    width: 70%;
+    margin-left: 12%;
+    font-size: 20px;
+    padding: 16px 16px;
+    border-radius: 10px;
+    border-color: black;
+    margin-bottom: 25px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+input:focus,
+textarea:focus {
+    outline: none;
+    border-color: #5bd183;
+    border-width: 3px;
+}
+
+.btn {
+    display: inline-block;  
+    background-color: #007bff; 
+    color: white;
+    padding: 10px 20px; 
+    border: none;
+    cursor: pointer; 
+    text-align: center;
+    border-radius: 5px; 
+    font-size: 16px; 
+    width: auto;
+    box-sizing: border-box;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+.btnWrap {
+    display: flex;
+    justify-content: center; 
+    margin-top: 20px; 
+}
+
+/* Contact Info */
+
+#contactInfo {
+    position: relative;
+    margin-top: 100px;
+    height: 60vh;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+#contactForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    width: 70%;
+}
+
+#contactH2 {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+#contactP, #contactP2 {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+form {
+    width: 100%;
+    max-width: 750px;
+}
+
+input, textarea {
+    width: 100%;
+    max-width: 750px;
+    margin: 15px auto;
+    display: block;
+    font-size: 1.2rem;
+    padding: 14px 18px;
+}
+
+.btnWrap {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.btn {
+    display: inline-block;
+    padding: 0.6rem 2.8rem;
+    font-size: 1.1rem;
+    text-align: center;
+    cursor: pointer;
+}
+
+.contactDetails {
+    overflow: hidden;
+    width: auto;
+    margin: auto;
+    text-align: left;
+}
+
+.caMap {
+    float: left;
+    margin-right: 1rem;
+    height: 20rem;
+    width: auto;
+}
+
+.contactDetails p {
+    font-size: 1.2rem;
+    margin: 0.5rem 0;
+}
+
+.clear {
+    overflow: auto;
+    display: block; 
+}
+
+/* Tourism Table */
+
+#laTourism {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+}
+
+.tourismTable {
+    width: 80%;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+.tourismTable table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+
+.tourismTable caption {
+    font-size: 1.8em;
+    font-weight: 600;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.tourismTable th,
+.tourismTable td {
+    padding: 20px 10px;
+    text-align: center;
+    border-bottom: 1px solid
 }

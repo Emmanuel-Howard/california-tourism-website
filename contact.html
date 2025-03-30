@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <h4>California</h4>
+            </div>
+            <ul class="navLinks">
+                <li><a href="index.html#locationIntro">Home</a></li>
+                <li><a href="Sacremento.html#locationIntro">Sacremento</a></li>
+                <li><a href="San Francisco.html#locationIntro">San Francisco</a></li>
+                <li><a href="Los Angeles.html#locationIntro">Los Angeles</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="locationIntro">
+            <img src="./assets/contact us.png" alt="Contact Us" class="locationImg">
+        </section>
+        <section id="contactForm">
+            <form action="">
+                <h2 id="contactH2">Contact Form</h2>
+                <p id="contactP">Feel free to use this contact form to reach out to California's media team.</p>
+                <p id="contactP2">Please make sure to enter the correct email twice!</p>
+
+                <label for="first"></label>
+                <input type="text" id="first" name="first" placeholder="First Name" required>
+
+                <label for="last"></label>
+                <input type="text" id="last" name="last" placeholder="Last Name" required>
+                
+                <label for="email"></label>
+                <input type="email" id="email" name="email" placeholder="example@gmail.com" required>
+
+                <label for="email2"></label>
+                <input type="email" id="email2" name="email2" placeholder="Please enter your email again" required>
+
+                <label for="message"></label>
+                <textarea rows="5" cols="60" id="message" name="message" placeholder="Enter Text" required></textarea>
+
+                <div class="btnWrap">
+                    <button type="submit" class="btn">Submit Form</button>
+                </div>
+             </form>
+        </section>
+        <section id="contactInfo">
+            <div class="contactDetails">
+                <img src="./assets/ca map.jpg" alt="Headquarters Map" class="caMap">
+                <p class="clear"><b>Email:</b> camediateam@california.com</p>
+                <p class="clear"><b>Phone:</b> (123) 456-7890</p>
+                <p class="clear"><b>Address:</b> 123 Main Street, San Francisco, CA</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <nav>
+            <div class="navLinksContainer">
+                <ul class="navLinks">
+                    <li><a href="index.html#locationIntro">Home</a></li>
+                    <li><a href="Sacremento.html#locationIntro">Sacremento</a></li>
+                    <li><a href="San Francisco.html#locationIntro">San Francisco</a></li>
+                    <li><a href="Los Angeles.html#locationIntro">Los Angeles</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <p>Copyright &#169; 2025 Emmanuel Howard. All Rights Reserved.</p>
+    </footer>
+    <script src="index.js"></script>
+</body>
+</html>
