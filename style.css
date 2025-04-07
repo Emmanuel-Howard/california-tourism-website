@@ -236,7 +236,8 @@ footer p{
 /* Contact Form */
 
 #contactH2{
-    padding-top: 10px;
+    position: relative;
+    top: 10px;
     text-align: center;
     font-size: 60px;
     padding-bottom: 5px;
