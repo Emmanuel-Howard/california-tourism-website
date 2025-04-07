@@ -351,8 +351,10 @@ input, textarea {
 }
 
 .btnWrap {
-    text-align: center;
-    margin-top: 1rem;
+    display: flex;
+    justify-content: center; 
+    margin-top: 20px;
+    position: relative;
 }
 
 .btn {
@@ -361,6 +363,9 @@ input, textarea {
     font-size: 1.1rem;
     text-align: center;
     cursor: pointer;
+    position: absolute; 
+    top: 20px; 
+    right: 270px; 
 }
 
 .contactDetails {
